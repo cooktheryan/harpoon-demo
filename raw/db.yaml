@@ -1,5 +1,5 @@
 Image: "docker.io/library/mysql:5.7"
-Name: "wordpress"
+Name: "db"
 Env:
   MYSQL_DATABASE: exampledb
   MYSQL_USER: exampleuser
