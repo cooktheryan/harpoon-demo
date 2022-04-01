@@ -3,7 +3,7 @@ targets:
 - name: harpoon
   url: http://github.com/cooktheryan/harpoon-demo
   raw:
-    targetPath: examples/raw
+    targetPath: raw
     schedule: "*/1 * * * *"
     pullImage: true
   branch: main
