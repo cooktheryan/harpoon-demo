@@ -1,10 +1,10 @@
-Image: "docker.io/library/wordpress:latest"
+Image: "docker.io/library/wordpress:5.9.1-apache"
 Name: "wordpress"
 Env:
   APP_COLOR: "pink"
   tree: "trunk"
 Ports:
-  - container_port: 8080
+  - container_port: 80
     host_port: 8080
 Volumes:
   - name: wordpress
