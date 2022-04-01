@@ -1,0 +1,13 @@
+{
+ "Image":"docker.io/library/wordpress:5.9.1-apache",
+ "Name": "wordpress",
+ "Env": {"WORDPRESS_DB_USER": "wp-admin", "WORDPRESS_DB_PASSWORD": "secret", "WORDPRESS_DB_NAME": "wordpress"},
+ "Mounts": "",
+ "Volumes": [{"Name": "wordpress", "Dest": "/var/www/html", "Options": "rw"}],
+ "Ports": [{
+     "host_ip":        "",
+     "container_port": 8080,
+     "host_port":      8080,
+     "range":         0,
+     "protocol":      ""}]
+}
