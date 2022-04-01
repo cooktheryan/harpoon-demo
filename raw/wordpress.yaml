@@ -1,8 +1,10 @@
 Image: "docker.io/library/wordpress:5.9.1-apache"
 Name: "wordpress"
 Env:
-  APP_COLOR: "pink"
-  tree: "trunk"
+  WORDPRESS_DB_HOST: db
+  WORDPRESS_DB_USER: exampleuser
+  WORDPRESS_DB_PASSWORD: examplepass
+  WORDPRESS_DB_NAME: exampledb
 Ports:
   - container_port: 80
     host_port: 8080
