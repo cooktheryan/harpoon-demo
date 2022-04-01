@@ -1,0 +1,13 @@
+Image: "docker.io/library/mysql:5.7"
+Name: "wordpress"
+Env:
+  MYSQL_DATABASE: exampledb
+  MYSQL_USER: exampleuser
+  MYSQL_PASSWORD: examplepass
+  MYSQL_RANDOM_ROOT_PASSWORD: '1'
+Ports:
+  - container_port: 3306
+    host_port: 3306
+Volumes:
+  - name: db
+    dest: /var/lib/mysql
