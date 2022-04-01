@@ -1,0 +1,12 @@
+Image: "docker.io/library/wordpress:latest"
+Name: "wordpress"
+Env:
+  APP_COLOR: "pink"
+  tree: "trunk"
+Ports:
+  - container_port: 8080
+    host_port: 8080
+Volumes:
+  - Name: db
+    Dest: /var/www/html
+    Options: rw
