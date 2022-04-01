@@ -9,4 +9,4 @@ Ports:
 Volumes:
   - name: wordpress
     dest: /var/www/html
-    options: rw
+    options: "rw"
