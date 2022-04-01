@@ -1,4 +1,4 @@
-Image: "docker.io/library/wordpress:5.9.2-apache"
+Image: "docker.io/library/wordpress:5.9.1-apache"
 Name: "wordpress"
 Env:
   WORDPRESS_DB_HOST: 10.88.0.1
