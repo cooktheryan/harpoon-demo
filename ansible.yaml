@@ -5,6 +5,6 @@ targets:
   methods:
     ansible:
       targetPath: ansible
-      sshDirectory: /root/.ssh
+      sshDirectory: /home/rcook/.ssh
       schedule: "*/1 * * * *"
   branch: main
